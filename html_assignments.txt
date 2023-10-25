@@ -1,0 +1,340 @@
+<!-- HTML:
+
+    Create a simple HTML page with a title, heading, paragraph, and image.
+    Create a complex HTML table with different types of data, such as text, numbers, and images.
+    Create a simple HTML form with different types of form elements, such as input fields, text boxes, and select boxes.
+    Embed a video in an HTML page.
+    Create a navigation bar with multiple pages.
+
+CSS:
+
+    Change the font, size, and color of the text on your HTML page.
+    Add a border or background to an element on your HTML page.
+    Position an element on your HTML page using CSS.
+    Create a responsive layout that looks good on all devices.
+    Use CSS animations to add effects to your HTML page. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html page</title>
+</head>
+<body>
+    <!-- <h1>HTML PAGE</h1>
+    <P>HTML is a markup language used by the browser to manipulate text, images, and other content, 
+        in order to display it in the required format. HTML was created by Tim Berners-Lee in 1991. 
+        The first-ever version of HTML was HTML 1.0, 
+        but the first standard version was HTML 2.0, published in 1995.08</P>
+    <img src="what-is-html-3.webp" width="600" height="400"> -->
+    <table border="1" style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>College Name</th>
+                <th>Place</th>
+                <th>DOB</th>
+            </tr>
+            <tr>
+                <td>Theja M D</td>
+                <td>SNMIMT</td>
+                <td>kdlr</td>
+                <td>08/01/2002</td>
+            </tr>
+            <tr>
+                <td>diya M D</td>
+                <td>Sahridhaya</td>
+                <td>kdlr</td>
+                <td>30/10/2002</td>
+            </tr>
+            <tr>
+                <td>Sneha M A</td>
+                <td>SNMIMT</td>
+                <td>Paravoor</td>
+                <td>23/02/2002</td>
+            </tr>
+        </thead>
+        <thead> <strong>Details of the students</strong>
+            <tr>
+                <th colspan="4">Mark of the students</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Mark</th>
+                <th>Photo</th>
+            </tr>
+            <tr>
+                <td rowspan="3">theja</td>
+                <td>physics</td>
+                <td>67</td>
+                <td rowspan="3"><img src="perosn icon.png" width="100" height="100"></td>
+            </tr>
+            <tr>
+                
+                <td>maths</td>
+                <td>77</td>
+            </tr>
+            <tr>
+                
+                <td>social</td>
+                <td>76</td>
+            </tr>
+            
+            <tr>
+                <td rowspan="3">diya</td>
+                <td>physics</td>
+                <td>57</td>
+                <td rowspan="3"><img src="perosn icon.png" width="100" height="100"></td>
+            </tr>
+            <tr>
+                
+                <td>maths</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                
+                <td>social</td>
+                <td>76</td>
+            </tr>
+            <tr>
+                <td rowspan="3">sneha</td>
+                <td>physics</td>
+                <td>68</td>
+                <td rowspan="3"><img src="perosn icon.png" width="100" height="100"></td>
+            </tr>
+            <tr>
+                
+                <td>maths</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                
+                <td>social</td>
+                <td>46</td>
+            </tr>
+
+
+        </thead>
+        
+
+        
+    </table>
+    <h2>LOGIN</h2>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password"><br><br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br><br>
+        <label for="Course">Course:</label>
+        <select>
+            <option>select courses</option>
+            <option value="CSE">CSE</option>
+            <option value="CSE">ECE</option>
+            <option value="CSE">CE</option>
+            <option value="CSE">EEE</option>
+            <option value="CSE">ICE</option>
+            <option value="CSE">ME</option>
+        </select><br><br>
+        <label for="login">Login Here!</label>
+        <input type="submit"name="login">
+    </form>
+<!-- 
+    <iframe width="320" width="240"
+        src="https://www.youtube.com/watch?v=4jBXRjPjtHs">
+    </iframe> -->
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe> 
+    <nav class="topnav">
+        <a href="https://www.google.com"></a>
+    </nav>
+<!-- Change the font, size, and color of the text on your HTML page. -->
+
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        h1.b1{border-style: double;
+        color: black;
+    border-width: 20px;
+    }
+        p.b2{border-style: solid;
+        color: #f00;
+    border-color: black;
+border-width: medium;}
+    h1.b3{
+        border-style: groove;
+        background-color: rgb(0, 191, 255);
+        border-radius: 15px 50px 30px 5px;
+    }
+    p.b4{
+        border-style: dotted;
+        border-color:black;
+        color: rgba(255, 99, 71, 1);
+        background-color: rgba(255, 96, 0, 0.9);
+        
+    }
+    h1.b5{
+        border-style: dashed;
+        border-color: chocolate;
+
+    }
+    p.b6{
+        border-style: double;
+        border-color: aqua;
+        color: darkgoldenrod;
+    }
+    .element {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+        
+    </style>
+</head>
+<body>
+    <h1 class="b1">CSS Border</h1>
+    <p class="b2">The border-width property is used to set the border's width. It is set in pixels. You can also use the
+        one of the three pre-defined values, thin, medium or thick to set the width of the border</p>
+    <h1 class="b3">Hyper text markup language</h1>
+    <p class="b4">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. 
+        It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+    <h1 class="b5">Python programming language</h1>
+    <p class="b6">Python is a high-level, general-purpose programming language. 
+        Its design philosophy emphasizes code readability with the use of significant indentation. 
+        Python is dynamically typed and garbage-collected. 
+        It supports multiple programming paradigms, including structured, 
+        object-oriented and functional programming.</p>
+        <p class="element">Python is a high-level, general-purpose programming language. 
+            Its design philosophy emphasizes code readability with the use of significant indentation. 
+            Python is dynamically typed and garbage-collected. 
+            It supports multiple programming paradigms, including structured, 
+            object-oriented and functional programming.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <style>
+            /* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a mobile-first approach */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature {
+    flex: 0 1 calc(33.33% - 20px); /* Adjust the width as needed */
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+        </style>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Our Website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <h2>Feature 1</h2>
+                <p>Feature description goes here.</p>
+            </div>
+            <div class="feature">
+                <h2>Feature 2</h2>
+                <p>Feature description goes here.</p>
+            </div>
+            <div class="feature">
+                <h2>Feature 3</h2>
+                <p>Feature description goes here.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Your Website
+    </footer>
+</body>
+</html>

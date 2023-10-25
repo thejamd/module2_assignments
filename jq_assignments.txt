@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("h1,h2").addClass("red");
+            $("p").addClass("imp");
+        });
+        $("#btn1").click(function(){
+            $("h1,h2").removeClass("red");
+            $("p").removeClass("imp");
+        });
+        $("#btn2").click(function(){
+            $("h1,h2").toggleClass("red");
+            $("p").toggleClass("imp");
+        });
+        $("btn3").click(function(){
+            $("p").css("background-color","yellow")
+        });
+       
+    });
+
+</script>
+<style>
+    .red{
+        background-color: black;
+        color: blanchedalmond;
+    }
+    .imp{
+        text-align: center;
+        font-size: large;
+        font-family: sans-serif;
+    }
+</style>
+</head>
+<body>
+    <h1>jquery</h1>
+    <h2>add classes</h2>
+    <p>The following example shows how to add class attributes to different elements. Of course you can
+        select multiple elements, when adding classes</p>
+    <button >click here to add!</button>
+    <button id="btn1">click here to remove!</button>
+    <button id="btn2">click to toggle!</button>
+    <button id ="btn3">click to change css property</button>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide()
+            });
+            $("#show").click(function(){
+                $("p").show()
+            });
+            $("button").click(function(){
+                $("p").toggle()
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <p>
+        After making these checks and corrections, try running your Python script again. If the issue persists, 
+        it may be helpful to print out the connection parameters to verify that they are being set correctly in your script.
+         Additionally, check the MySQL error log for more detailed information about the access denied error
+
+    </p>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button>Toggle</button>
+    
+</body>
+</html>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+$("#btn1").click(function(){
+
+$("#div1").fadeIn();
+
+$("#div2").fadeIn("slow");
+
+$("#div3").fadeIn(3000);
+
+$("#div4").fadeIn(4000);
+
+});
+$("#btn2").click(function(){
+    $("#div1").fadeOut();
+    $("#div2").fadeOut();
+    $("#div3").fadeOut();
+    $("#div4").fadeOut();
+});
+$("#toggle").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle();
+    $("#div3").fadeToggle();
+    $("#div4").fadeToggle();
+});
+$("#to").click(function(){
+    $("#div1").fadeTo("slow",0.15);
+    $("#div2").fadeTo("slow",0.14);
+    $("#div3").fadeTo("slow",0.15);
+    $("#div4").fadeTo("slow",0.10);
+});
+
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<p>See the fadeIn() method example with different parameters.</p>
+
+<button id="btn1">Click to fade in boxes</button>
+<button id="btn2">Click to fade out boxes</button>
+<button id="toggle">click to toggle</button>
+<button id="to">click to fade</button><br><br>
+
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div><br>
+
+<div id="div4" style="width: 80px; height: 80px; display: none; background-color: black;"></div>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+        
+        $("#flip").click(function(){
+        
+        $("#panel").slideDown("slow");
+        
+        });
+        $("#flip2").click(function(){
+            $("#panel2").slideUp("slow")
+        });
+        $("#flip3").click(function(){
+            $("#panel2").slideToggle("slow")
+        });
+        
+        });
+        
+        </script>
+        
+        <style>
+        
+        #flip {
+        
+        padding: 5px;
+        
+        text-align: center;
+        
+        background-color: #00FFFF;
+        
+        border: solid 1px #c3c3c3;
+        
+        }
+        
+        #panel {
+        
+        padding: 50px;
+        
+        display: none;
+        text-align: center;
+        background-color: black;
+        color: white;
+        
+        }
+        #flip2{
+            padding: 5px;
+            text-align: center;
+            background-color: blueviolet;
+
+        }
+        #flip3{
+            padding: 5px;
+            text-align: center;
+            background-color:chartreuse;
+
+        }
+        #panel2{
+            padding: 50px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        
+        </style>
+</head>
+<body>
+    <div id="flip">Click to slide down panel</div>
+
+    <div id="panel">Hello stepskochi.com!
+
+It is the best tutorial website to learn jQuery and other languages.</div>
+<div id="flip2">click to slide up the panel</div>
+<div id="flip3"> click to toggle</div>
+<div id="panel2">Hello stepskochi.com!
+
+    It is the best tutorial website to learn jQuery and other languages</div>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").dblclick(function(){
+                $("p").hide()
+            });
+            $("#para").mouseenter(function(){
+                alert("yes,it's done")
+            });
+            $("#para2").mouseleave(function(){
+                alert("leave from here!")
+            });
+            $("hov").hover(function(){
+                alert("ok");
+            },
+                function(){
+                    alert("not ok");
+                
+            });
+            $("input").focus(function(){
+                $("this").css("background-color","black");
+            });
+            $("input").blur(function(){
+                $("this").css("background-color","red");
+            });
+            $("form").submit(function(){
+                alert("submitted")
+            });
+            $("in").keypress(function(){
+           $("span").text(i+=1);
+          });
+          $("inp").keydown(function(){
+    $("inp").css("background-color", "yellow");
+  });
+  $("inp").keyup(function(){
+    $("inp").css("background-color", "pink");
+  });
+         });
+    
+
+    </script>
+</head>
+
+<body>
+    <p>The function is executed when the user clicks on the HTML element
+        The function is executed when the user clicks on the HTML element
+        The function is executed when the user clicks on the HTML element
+        The function is executed when the user clicks on the HTML element
+        The function is executed when the user clicks on the HTML element
+        The function is executed when the user clicks on the HTML element
+        The function is executed when the user clicks on the HTML element
+    </p>
+    <button>please double click!</button>
+    <p id="para">this is mouse enter</p>
+    <p id="para2">this is mouse leave</p>
+    <p id="hov">it's a hover</p>
+ <form>
+    NAME:<input type="text" name="name"><br>
+    EMAIL:<input type="text" name="email"><br>
+    <button>SUBMIT</button>
+</form>
+    enter your name:<input id="in" type="text">
+    <p>keypress:<span>0</span></p>
+    enter anything:<input id="inp" type="text">
+</body>
+
+</html>
